@@ -9,13 +9,11 @@ body {
     grid-row: 1/ span 2;
  background-color: #fed9b7;
 }
-.headerBar {
-    background-color: #fdfcdc;
-    margin: 0;
-}
+
 .main {
     background-color: #00afb9;
 }
+/* side bar */
 .logo{
     display: flex;
     justify-content: center;
@@ -40,4 +38,57 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+}
+/* header */
+.headerBar {
+    background-color: #fdfcdc;
+    margin: 0;
+    grid-row: 1/ span 1;
+    display: grid;
+    grid-template: auto 1fr/2fr 1fr;
+    padding: 0.5vh 0.5vw;
+}
+.userProfilePic {
+    width: 4vw;
+    border-radius: 50%;
+}
+.smallerUserProfilePic{
+    width: 3vw;
+    border-radius: 50%;
+}
+.userName {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding-top: 1vh;
+    padding-left: 1vw;
+}
+.wordWrapper{
+    display: flex;
+    flex-direction: column;
+}
+p {
+    margin: 0;
+}
+.searchBar{
+    background-color: grey;
+    border: 4px solid grey;
+    width: 35vw;
+    border-radius: 20px;
+}
+button {
+    cursor: pointer;
+    color: white;
+    background-color: #00afb9;
+    border: none;
+    width: 5vw;
+    height: 4vh;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 1rem;
 }
